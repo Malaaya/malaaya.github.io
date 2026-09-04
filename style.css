@@ -1,85 +1,112 @@
-/* Importar fuente moderna desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #0f172a; /* Fondo oscuro elegante */
-    color: #f8fafc; /* Texto claro */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
     line-height: 1.6;
 }
 
-/* Cabecera y Navegación */
 header {
-    background-color: #1e293b;
-    padding: 2rem;
+    background-color: #ffffff;
+    padding: 2.5rem 1rem;
     text-align: center;
-    border-bottom: 2px solid #334155;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
 }
 
 header h1 {
-    margin: 0;
-    color: #38bdf8; /* Azul claro brillante */
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.025em;
+}
+
+header p {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-top: 4px;
 }
 
 nav {
-    margin-top: 15px;
+    margin-top: 1.2rem;
 }
 
 nav a {
-    color: #94a3b8;
+    color: #475569;
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: 600;
-    transition: color 0.3s;
+    font-weight: 500;
+    margin: 0 12px;
+    transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #2563eb;
 }
 
-/* Contenido Principal */
+/* Contenedor Principal */
 main {
-    max-width: 800px;
+    max-width: 760px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
 section {
-    margin-bottom: 40px;
-    background-color: #1e293b;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 h2 {
-    color: #38bdf8;
-    border-bottom: 1px solid #334155;
-    padding-bottom: 10px;
+    font-size: 1.3rem;
+    color: #0f172a;
+    margin-bottom: 16px;
+    font-weight: 600;
 }
 
-/* Foto de perfil */
+/* Sobre mi */
 #sobre-mi img {
-    border-radius: 12px;
-    margin-top: 15px;
-    border: 2px solid #38bdf8;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 3px solid #e2e8f0;
+    object-fit: cover;
 }
 
-/* Tarjeta de Proyectos */
+/* Proyectos */
 article {
-    background-color: #0f172a;
-    padding: 15px 20px;
+    background-color: #f8fafc;
+    padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #38bdf8;
-    margin-top: 15px;
+    border: 1px solid #e2e8f0;
+    margin-top: 12px;
+}
+
+article h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+article p {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
 }
 
 article a, section a {
-    color: #38bdf8;
+    color: #2563eb;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 article a:hover, section a:hover {
@@ -88,18 +115,78 @@ article a:hover, section a:hover {
 
 /* Contacto */
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    color: #475569;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    color: #64748b;
-    font-size: 0.9rem;
+    padding: 30px 0;
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+#toggle-dark {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    background-color: #f1f5f9;
+    color: #334155;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#toggle-dark:hover {
+    background-color: #e2e8f0;
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body.dark-mode header,
+body.dark-mode section {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode header h1,
+body.dark-mode h2,
+body.dark-mode article h3 {
+    color: #38bdf8;
+}
+
+body.dark-mode header p,
+body.dark-mode article p,
+body.dark-mode li {
+    color: #cbd5e1;
+}
+
+body.dark-mode article {
+    background-color: #0f172a;
+    border-color: #334155;
+}
+
+body.dark-mode nav a {
+    color: #cbd5e1;
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode a {
+    color: #38bdf8;
+}
+
+body.dark-mode #toggle-dark {
+    background-color: #334155;
+    color: #f8fafc;
+    border-color: #475569;
 }
