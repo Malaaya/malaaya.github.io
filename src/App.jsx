@@ -31,8 +31,8 @@ function App() {
           <div className="skills-container">
             <span className="skill-tag">Python /</span>
             <span className="skill-tag">Java</span>
-            <span className="skill-tag">Spring Boot / Frameworks</span>
-            <span className="skill-tag">Git / GitHub</span>
+            <span className="skill-tag">Spring Boot / Frameworks / </span>
+            <span className="skill-tag">Git / GitHub / </span>
             <span className="skill-tag">Bases de Datos (SQL)</span>
           </div>
         </section>
