@@ -147,45 +147,45 @@ footer {
     background-color: #e2e8f0;
 }
 
-/* Modo Oscuro */
-body.dark-mode {
+.dark-mode {
     background-color: #0f172a;
     color: #f8fafc;
+    min-height: 100vh; /* Asegura que el fondo oscuro cubra toda la pantalla */
 }
 
-body.dark-mode header,
-body.dark-mode section {
+.dark-mode header,
+.dark-mode section {
     background-color: #1e293b;
     border-color: #334155;
 }
 
-body.dark-mode header h1,
-body.dark-mode h2,
-body.dark-mode article h3 {
+.dark-mode header h1,
+.dark-mode h2,
+.dark-mode article h3 {
     color: #38bdf8;
 }
 
-body.dark-mode header p,
-body.dark-mode article p,
-body.dark-mode li {
+.dark-mode header p,
+.dark-mode article p,
+.dark-mode li {
     color: #cbd5e1;
 }
 
-body.dark-mode article {
+.dark-mode article {
     background-color: #0f172a;
     border-color: #334155;
 }
 
-body.dark-mode nav a {
+.dark-mode nav a {
     color: #cbd5e1;
 }
 
-body.dark-mode nav a:hover,
-body.dark-mode a {
+.dark-mode nav a:hover,
+.dark-mode a {
     color: #38bdf8;
 }
 
-body.dark-mode #toggle-dark {
+.dark-mode #toggle-dark {
     background-color: #334155;
     color: #f8fafc;
     border-color: #475569;
