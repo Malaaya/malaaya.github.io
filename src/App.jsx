@@ -263,7 +263,7 @@ function App() {
       content: (
         <figure className="tribute-page">
           <div className="tribute-photo">
-            <img src={`${BASE}images/retratosnk.png`} alt="Retrato de Shingeki no Kyojin" />
+            <img src={`${BASE}images/3jaegers.png`} alt="Retrato de la familia Jaeger" />
             <span className="photo-tape top-left" aria-hidden="true" />
             <span className="photo-tape top-right" aria-hidden="true" />
             <span className="photo-tape bottom-left" aria-hidden="true" />
